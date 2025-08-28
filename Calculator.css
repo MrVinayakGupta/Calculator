@@ -5,7 +5,7 @@
 body {
     /* font-family: Arial, sans-serif;
     background-image: url('273-2732625_math-formulas-vector-math-formula-hd-png-download.png') ; */
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    background: linear-gradient(to right, #fb8500, #219ebc);
     font-family: 'Segoe UI', sans-serif;
     color: #fff;
 
@@ -17,18 +17,33 @@ body img{
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.5;
     object-fit: cover;
 }
 
 header{
-    background-color: #666666;
+    background-color: #006d77;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header h2{
+header .logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+header .logo h2{
+    cursor: pointer;
+}
+header .logo img {
+    width: 40px;
+    height: 40px;
+    opacity:1;
+    border-radius: 50%;
+    margin: 4px;
+    position: relative;
+    z-index: 1;
     cursor: pointer;
 }
 header ul{
@@ -76,7 +91,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #666666;
+    background-color: #006d77;
     border-radius: 50%;
     height: 55px;
     width: 55px;
@@ -85,10 +100,12 @@ main{
     cursor: pointer;
 
   border: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.1s ease;
 }
 .btn:hover {
-  background-color: #ffe6a744;
+  background-color: #006d7744;
+  color: #ffffff; 
+  opacity: 1;
 }
 
 #c {
@@ -97,28 +114,70 @@ main{
     /* grid-column: span 2; */
     width: 9vw;
     border-radius: 25px;
+    transition: background-color 0.1s ease;
 }
+#c:hover {
+  background-color: #e76f5188;
+  color: #ffffff; 
+  opacity: 1;
+}
+
 #ce{
     font-size: 25px;
     color: red;
     background-color: #e9c46a;
+    transition: background-color 0.1s ease;
 }
+#ce:hover {
+  background-color: #e9c46a88;
+  opacity: 1;
+}
+
 #\+{
     background-color: #606c38;
     color: #fefae0;
+    transition: background-color 0.1s ease;
 }
+#\+:hover {
+  background-color: #606c3888;
+  color: #ffffff; 
+  opacity: 1;
+}
+
 #\-{
     background-color: #283618;
     color: #fefae0;
+    transition: background-color 0.1s ease;
+}
+#\-:hover {
+  background-color: #28361888;
+  color: #ffffff; 
+  opacity: 1;
 }
 #\*{
     background-color: #dda15e;
     color: #fefae0;
+    transition: background-color 0.1s ease;
 }
+#\*:hover {
+  background-color: #dda15e88;
+  color: #ffffff; 
+  opacity: 1;
+}
+
+
 #\/{
     background-color: #bc6c25;
     color: #fefae0;
+    transition: background-color 0.1s ease;
 }
+#\/:hover {
+  background-color: #bc6c2588;
+  color: #ffffff; 
+  opacity: 1;
+}
+
+
 #\={
     background-color: #2a9d8f;
     color: #fefae0;
@@ -128,14 +187,26 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: background-color 0.1s ease;
+}
+#\=:hover {
+  background-color: #2a9d8f88;
+  color: #ffffff; 
+  opacity: 1;
 }
 #\= img {
     width : 80px;
     height: 50px;
     display: none;
 }
+
+
 #\%{
     background-color: #F79256;
     color: #fefae0;
-
+    transition: background-color 0.1s ease;
+}
+#\%:hover {
+  background-color: #F7925688;
+    color: #ffffff;
 }
