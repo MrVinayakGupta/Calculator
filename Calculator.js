@@ -17,7 +17,6 @@ let ce = document.getElementById("ce");
 let plus = document.getElementById("+");
  plus.addEventListener("click", function() {
     console.log("Sum button clicked");
-    console.log(inputElement.value, "+" );
     inputElement.value= inputElement.value + "+";
  });
 let minus = document.getElementById("-");
@@ -144,17 +143,3 @@ function clearAll(){
 }
 
 
-
-// let input = document.getElementById("result");
-// let buttons = document.querySelectorAll(".btn");
-
-// buttons.forEach(button => {
-//   button.addEventListener("click", function () {
-//     console.log("Button clicked", this.id );
-//     input.value += this.id;
-//     let string = "";
-//     if (this.id === "=") {
-      
-//     }
-//   });
-// });
